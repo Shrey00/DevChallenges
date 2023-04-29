@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.content-cont{
+    width: 60vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+.content-cont> .content{
+    width: 50%;
+}
+.content-cont>.heading{
+    font-family: 'PT serif', serif;
+    font-size: 18px;
+    line-height: 48px;
+    letter-spacing: -0.045em;
+}
+.content>h3{
+    line-height: 54px;
+    /* margin: 1654px; */
+}
+.content>p{
+    line-height: 27px;
+    font-size:18px;
+    /* margin: 1654px; */
+}
+.team {
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.person-name{
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 0px;
+}
+.person-title{
+    font-family: 'PT serif', serif;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    padding: 0px 6px;
+}
+.team>.person {
+    margin: 2rem 0rem;
+}
+.person-img-cont{
+    display: flex;  
+    align-items: start;
+    justify-content: center;
+}
+.person:nth-child(2) {
+    padding-top: 14%;
+}
+
+.person:nth-child(5) {
+    padding-top: 14%;
+}
+
+.person-image {
+    width: 238px;
+}
+
+@media(900px<=width<= 1360px ){
+    .person:nth-child(2) {
+        padding-top: 14%;
+    }
+    
+    .person:nth-child(4) {
+        padding-top: 14%;
+    }
+    
+    .person:nth-child(5){
+        padding-top: 0%;
+    }
+    .person:nth-child(6) {
+        padding-top: 14%;
+    }
+}
+#info{
+    text-align: center;
+    color: grey;
+}
+@media(max-width:900px){
+    .team{
+        width: 90vw;
+    }
+    .content-cont{
+        width:90vw;
+        flex-direction: column;
+    }
+    .person:nth-child(4) {
+        padding-top: 14%;
+    }
+    
+    .person:nth-child(5){
+        padding-top: 0%;
+    }
+    .person:nth-child(6) {
+        padding-top: 14%;
+    }
+}
+@media(max-width:600px){
+    .person-image {
+        width: 138px;
+    }
+    .content-cont> .content{
+        width: 100%;
+    }
+}
